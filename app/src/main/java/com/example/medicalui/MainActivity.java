@@ -2,7 +2,9 @@ package com.example.medicalui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,5 +12,34 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    void firstSplashScreen(){
+        Intent intent = new Intent(MainActivity.this, FirstSplashActivity.class);
+        startActivity(intent);
+    }
+
+    public void doctor(View view) {
+        firstSplashScreen();
+    }
+
+    public void receptionist(View view) {
+        firstSplashScreen();
+    }
+
+    public void nurse(View view) {
+        firstSplashScreen();
+    }
+
+    public void analysisEmployee(View view) {
+        firstSplashScreen();
+    }
+
+    public void manager(View view) {
+        firstSplashScreen();
+    }
+
+    public void hr(View view) {
+        firstSplashScreen();
     }
 }

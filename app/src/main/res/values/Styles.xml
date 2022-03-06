@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="background_top">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="srcCompat">@drawable/background_top_left</item>
+    </style>
+    <style name="background_bottom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="srcCompat">@drawable/background_bottom_right</item>
+    </style>
+</resources>

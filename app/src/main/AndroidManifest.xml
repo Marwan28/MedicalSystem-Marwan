@@ -9,6 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MedicalUi">
+        <activity android:name=".SendedCallSplashActivity"></activity>
+        <activity android:name=".SelectDoctorActivity" />
+        <activity android:name=".CreateCallActivity" />
+        <activity android:name=".CallsActivity" />
+        <activity android:name=".ReceptionistActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SecondSplashActivity" />
+        <activity android:name=".FirstSplashActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

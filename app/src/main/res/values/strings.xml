@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MedicalUi</string>
+    <string name="forget_password"><u>forget password ?</u></string>
 </resources>

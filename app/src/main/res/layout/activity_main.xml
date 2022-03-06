@@ -5,14 +5,149 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+    <androidx.appcompat.widget.AppCompatImageView
+        style="@style/background_top"
+        tools:ignore="MissingConstraints" />
+    <androidx.appcompat.widget.AppCompatImageView
+        style="@style/background_bottom"
+        tools:ignore="MissingConstraints" />
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/tv_prototype_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prototype map"
+        android:layout_marginBottom="@dimen/_90sdp"
+        android:textSize="@dimen/_20ssp"
+        android:textAlignment="center"
+        android:alpha="1"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/main" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_marginBottom="@dimen/_120sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_prototype_map"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="3">
+            <com.google.android.material.button.MaterialButton
+                android:layout_height="@dimen/_60sdp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Doctor"
+                android:onClick="doctor"
+                android:textSize="@dimen/_10ssp"
+                android:textAllCaps="false"
+                android:textColor="@color/main"
+                app:strokeColor="@color/gray"
+                app:cornerRadius="@dimen/_5sdp"
+                android:id="@+id/btn_doctor"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_light"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
 
+            <com.google.android.material.button.MaterialButton
+                android:layout_height="@dimen/_60sdp"
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:padding="@dimen/_5sdp"
+                android:text="Receptionist"
+                android:onClick="receptionist"
+                android:textSize="@dimen/_10ssp"
+                android:textAllCaps="false"
+                android:textColor="@color/main"
+                app:strokeColor="@color/gray"
+                app:cornerRadius="@dimen/_5sdp"
+                android:id="@+id/btn_receptionist"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_light"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_height="@dimen/_60sdp"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:padding="@dimen/_5sdp"
+                android:text="Nurse "
+                android:onClick="nurse"
+                android:textSize="@dimen/_10ssp"
+                android:textAllCaps="false"
+                android:textColor="@color/main"
+                app:strokeColor="@color/gray"
+                app:cornerRadius="@dimen/_5sdp"
+                android:id="@+id/btn_nurse"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:fontFamily="@font/poppins_light"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="3">
+            <com.google.android.material.button.MaterialButton
+                android:layout_height="@dimen/_60sdp"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:padding="@dimen/_5sdp"
+                android:text="Analysis Employee"
+                android:onClick="analysisEmployee"
+                android:textSize="@dimen/_10ssp"
+                android:textAllCaps="false"
+                android:textColor="@color/main"
+                app:strokeColor="@color/gray"
+                app:cornerRadius="@dimen/_5sdp"
+                android:id="@+id/btn_analysis_employee"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_light"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_height="@dimen/_60sdp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="@dimen/_5sdp"
+                android:text="Manager"
+                android:onClick="manager"
+                android:textSize="@dimen/_10ssp"
+                android:textAllCaps="false"
+                android:textColor="@color/main"
+                app:strokeColor="@color/gray"
+                app:cornerRadius="@dimen/_5sdp"
+                android:id="@+id/btn_manager"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_light"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_height="@dimen/_60sdp"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:padding="@dimen/_5sdp"
+                android:text="HR"
+                android:onClick="hr"
+                android:textSize="@dimen/_10ssp"
+                android:textAllCaps="false"
+                android:textColor="@color/main"
+                app:strokeColor="@color/gray"
+                app:cornerRadius="@dimen/_5sdp"
+                android:id="@+id/btn_hr"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:fontFamily="@font/poppins_light"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
