@@ -15,6 +15,10 @@
     <color name="calls_top_border">#D8D8D8</color>
     <color name="third_gray">#0000001F</color>
     <color name="light_green">#36F38E</color>
+    <color name="profile_background">#17B7A8</color>
+    <color name="profile_name">#20CCBC</color>
+    <color name="profile_texts">#343434</color>
+    <color name="notification_description">#8E8E8E</color>
 
 
 </resources>

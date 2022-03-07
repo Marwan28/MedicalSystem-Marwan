@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MedicalUi">
-        <activity android:name=".SendedCallSplashActivity"></activity>
+        <activity android:name=".NotificationActivity"></activity>
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".SendedCallSplashActivity" />
         <activity android:name=".SelectDoctorActivity" />
         <activity android:name=".CreateCallActivity" />
         <activity android:name=".CallsActivity" />

@@ -18,4 +18,14 @@ public class ReceptionistActivity extends AppCompatActivity {
         Intent intent = new Intent(ReceptionistActivity.this, CallsActivity.class);
         startActivity(intent);
     }
+
+    public void profile(View view) {
+        Intent intent = new Intent(ReceptionistActivity.this, ProfileActivity.class);
+        startActivity(intent);
+    }
+
+    public void notification(View view) {
+        Intent intent = new Intent(ReceptionistActivity.this, NotificationActivity.class);
+        startActivity(intent);
+    }
 }
