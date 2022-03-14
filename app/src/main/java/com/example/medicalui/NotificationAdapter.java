@@ -32,8 +32,8 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         holder.name.setText(notificationModel.getName());
         holder.desc.setText(notificationModel.getDescription());
         holder.time.setText(notificationModel.getTime());
-        if (notificationModel.getStatus()=="old"){
-            holder.status.setBackground(null);
+        if (notificationModel.getStatus().equals("new")){
+            holder.status.setImageResource(R.drawable.ic_new_notification);
         }
 
     }

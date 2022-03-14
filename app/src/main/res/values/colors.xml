@@ -19,6 +19,8 @@
     <color name="profile_name">#20CCBC</color>
     <color name="profile_texts">#343434</color>
     <color name="notification_description">#8E8E8E</color>
+    <color name="fourth_gray">#F2F2F2</color>
+    <color name="reply">#0000005C</color>
 
 
 </resources>

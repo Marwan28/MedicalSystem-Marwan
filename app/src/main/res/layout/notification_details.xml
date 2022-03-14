@@ -63,8 +63,7 @@
                         android:id="@+id/iv_notification_status"
                         android:layout_width="@dimen/_10sdp"
                         android:layout_height="@dimen/_10sdp"
-                        android:layout_weight="1"
-                        android:src="@drawable/ic_new_notification"/>
+                        android:layout_weight="1"/>
                 </LinearLayout>
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/tv_notification_description"

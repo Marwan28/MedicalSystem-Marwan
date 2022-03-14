@@ -28,4 +28,19 @@ public class ReceptionistActivity extends AppCompatActivity {
         Intent intent = new Intent(ReceptionistActivity.this, NotificationActivity.class);
         startActivity(intent);
     }
+
+    public void tasks(View view) {
+        Intent intent = new Intent(ReceptionistActivity.this, TasksActivity.class);
+        startActivity(intent);
+    }
+
+    public void reports(View view) {
+        Intent intent = new Intent(ReceptionistActivity.this, ReportsActivity.class);
+        startActivity(intent);
+    }
+
+    public void attendanceLeaving(View view) {
+        Intent intent = new Intent(ReceptionistActivity.this, AttendanceLeavingActivity.class);
+        startActivity(intent);
+    }
 }
