@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void doctor(View view) {
-
+        firstSplashScreen();
     }
 
     public void receptionist(View view) {
