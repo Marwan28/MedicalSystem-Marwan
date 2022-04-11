@@ -20,7 +20,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void doctor(View view) {
-        firstSplashScreen();
+        Intent intent = new Intent(MainActivity.this, DoctorActivity.class);
+        startActivity(intent);
     }
 
     public void receptionist(View view) {

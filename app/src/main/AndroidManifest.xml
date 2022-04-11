@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MedicalUi">
-        <activity android:name=".AttendanceSecondSplashActivity"></activity>
+        <activity android:name=".CaseDetailsActivity"></activity>
+        <activity android:name=".DoctorCallsActivity" />
+        <activity android:name=".DoctorActivity" />
+        <activity android:name=".AttendanceSecondSplashActivity" />
         <activity android:name=".AttendanceFirstSplashActivity" />
         <activity android:name=".AttendanceLeavingActivity" />
         <activity android:name=".CreateReportActivity" />
